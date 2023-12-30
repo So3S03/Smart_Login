@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="contain">
+        <div class="login-box rounded-3 text-capitalize">
+            <div class="my-5 d-flex justify-content-center">
+                <span class="shape"><i class="fa-regular fa-user fa-2xl"></i></span>
+            </div>
+            <h2 class="fw-bold text-center text-uppercase mb-5">sign-up</h2>
+            <form>
+                <div class="mx-auto my-4 px-2">
+                    <input type="text" class="form-control rounded-5 " id="sign-name" placeholder="User Name">
+                    <div class="alert alert-danger text-capitalize rounded-5 d-none" id="SUname">
+                        be sure it's between 3 & 15 character
+                    </div>
+                </div>
+                <div class="mx-auto my-4 px-2">
+                    <input type="email" class="form-control rounded-5 " id="sign-email" placeholder="E-Mail">
+                    <div class="alert alert-danger text-capitalize rounded-5 d-none" id="SUemail">
+                        be sure it's valid email
+                        <b>example@gmail.org</b>
+                    </div>
+                </div>
+                <div class="mx-auto my-4 px-2">
+                    <input type="password" class="form-control rounded-5 " id="sign-pass" placeholder="Password">
+                    <div class="alert alert-danger text-capitalize rounded-5 d-none" id="SUpass">
+                        be sure it's between 6 & 15 character
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark text-capitalize m-auto d-block px-4 rounded-5 mb-3"
+                    id="signUpBtn">sign up</button>
+                <p class="alert alert-danger d-none" id="exist">This Email Is Exist</p>
+                <p class="text-capitalize m-auto w-fit-cont">already have an account? <a href="index.html"
+                        class="text-dark link">log in</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="contain">
+        <div class="login-box rounded-3 text-capitalize">
+            <div class="my-5 d-flex justify-content-center">
+                <span class="shape"><i class="fa-regular fa-user fa-2xl"></i></span>
+            </div>
+            <h2 class="fw-bold text-center text-uppercase mb-5">log-in</h2>
+            <form>
+                <div class="mx-auto my-4 px-2">
+                    <input type="email" class="form-control rounded-5 " id="log-email" placeholder="E-Mail">
+                    <div class="alert alert-danger rounded-5 text-capitalize d-none" id="keyUpValidateEmail">
+                        please enter a valid email
+                    </div>
+                    <div class="alert alert-danger rounded-5 text-capitalize d-none" id="submitValidateEmail">
+                        this Email doesn't exist
+                    </div>
+                </div>
+                <div class="mx-auto my-4 px-2">
+                    <input type="password" class="form-control rounded-5 " id="log-pass" placeholder="Password">
+                    <div class="alert alert-danger rounded-5 text-capitalize d-none" id="keyUpValidatePass">
+                        please enter a valid password
+                    </div>
+                    <div class="alert alert-danger rounded-5 text-capitalize d-none" id="submitValidatePass">
+                        this pass isn't correct
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-dark m-auto d-block px-4 rounded-5 mb-3 text-capitalize"
+                    id="logInBtn">log
+                    in</button>
+                <p class="alert alert-danger d-none" id="notExist">This Email Isn't Exist</p>
+                <p class="text-capitalize m-auto w-fit-cont">don't have an account? <a href="sign_up.html"
+                        class="text-dark link">sign
+                        up</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
